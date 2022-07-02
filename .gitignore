@@ -3,8 +3,13 @@ google-credentials.json
 *credentials*.json
 tweet-research-shared*.json
 .idea
+probabilities/
+probabilities_histogram/
+probabilities_histogram_log/
+RT_graph/
 .csv
 .png
+.html
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
