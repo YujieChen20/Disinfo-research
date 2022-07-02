@@ -3,8 +3,7 @@ google-credentials.json
 *credentials*.json
 tweet-research-shared*.json
 .idea
-.Rproj.user
-disinfo-research.Rproj
+.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
