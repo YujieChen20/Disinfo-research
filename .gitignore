@@ -4,6 +4,7 @@ google-credentials.json
 tweet-research-shared*.json
 .idea
 .csv
+.png
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
