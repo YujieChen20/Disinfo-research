@@ -18,7 +18,7 @@ for dt in dateRange(start_dt, end_dt):
     dateList.append(dt.strftime("%Y-%m-%d"))
 
 # Path
-dirPath = os.path.join(os.path.dirname(__file__), "probabilities")
+dirPath = os.path.join(os.path.dirname(__file__), "..", "probabilities")
 
 # Read csv file and
 df = pd.DataFrame()
@@ -37,6 +37,4 @@ for date in dateList:
     plt.ylabel("User Count (log scale)")
     plt.title('Distribution of Bot Probability Scores on ' + str(date))
     filename = str(date) + '.png'
-    plt.savefig(os.path.join(os.path.dirname(__file__), "probabilities_histogram_log", filename))
-
-#df.to_csv(os.path.join(os.path.dirname(__file__), "bot_classification", "probabilities", "probabilities.csv"), index=False)
+    plt.savefig(os.path.join(os.path.dirname(__file__), "..", "probabilities_histogram_log", filename))

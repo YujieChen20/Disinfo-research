@@ -18,7 +18,7 @@ for dt in dateRange(start_dt, end_dt):
     dateList.append(dt.strftime("%Y-%m-%d"))
 
 # Path
-dirPath = os.path.join(os.path.dirname(__file__), "probabilities")
+dirPath = os.path.join(os.path.dirname(__file__), "..", "probabilities")
 
 # Read csv file and
 df = pd.DataFrame()
@@ -36,7 +36,7 @@ plt.xticks([i / 100 for i in range(0, 101, 5)])
 plt.xlabel("Bot probability")
 plt.ylabel("User Count")
 plt.title('Distribution of Bot Probability Scores (log scale)')
-plt.savefig(os.path.join(os.path.dirname(__file__), "probabilities_histogram_log.png"))
+plt.savefig(os.path.join(os.path.dirname(__file__), "..", "probabilities_histogram_log.png"))
 
 fig, ax = plt.subplots(1, 1, figsize=(12, 6))
 plt.hist(probabilities, edgecolor="black", bins=[i/100 for i in range(0, 101, 5)])
@@ -45,4 +45,4 @@ plt.xticks([i / 100 for i in range(0, 101, 5)])
 plt.xlabel("Bot probability")
 plt.ylabel("User Count")
 plt.title('Distribution of Bot Probability Scores (y-axis capped)')
-plt.savefig(os.path.join(os.path.dirname(__file__), "probabilities_histogram_capped.png"))
+plt.savefig(os.path.join(os.path.dirname(__file__), "..", "probabilities_histogram_capped.png"))

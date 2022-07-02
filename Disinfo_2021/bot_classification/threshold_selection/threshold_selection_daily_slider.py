@@ -20,7 +20,7 @@ for dt in dateRange(start_dt, end_dt):
     dateList.append(dt.strftime("%Y-%m-%d"))
 
 # Path
-dirPath = os.path.join(os.path.dirname(__file__), "probabilities")
+dirPath = os.path.join(os.path.dirname(__file__), "..", "probabilities")
 
 # Read csv file and
 df = pd.DataFrame()
@@ -45,4 +45,4 @@ fig.update_traces(xbins=dict( # bins used for histogram
     ))
 #fig["layout"].pop("updatemenus") # optional, drop animation buttons
 fig.show()
-fig.write_html(os.path.join(os.path.dirname(__file__), "probabilities_histogram_log", "slider.html"))
+fig.write_html(os.path.join(os.path.dirname(__file__), "..", "probabilities_histogram_log", "slider.html"))
