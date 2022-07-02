@@ -7,8 +7,8 @@ probabilities/
 probabilities_histogram/
 probabilities_histogram_log/
 RT_graph/
-.csv
-.png
+*.csv
+*.png
 .html
 
 # Byte-compiled / optimized / DLL files
