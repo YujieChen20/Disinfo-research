@@ -171,7 +171,7 @@ for date in dateList:
     df = classifier.bot_probabilities_df
     fileName_csv = "probabilities_" + str(date) + ".csv"
     fileName_png = "histogram_" + str(date) + ".png"
-    csv_filepath = os.path.join(os.path.dirname(__file__), "bot_classification", "probabilities", fileName_csv)
-    img_filepath = os.path.join(os.path.dirname(__file__), "bot_classification", "probabilities_histogram", fileName_png)
+    csv_filepath = os.path.join(os.path.dirname(__file__), "probabilities", fileName_csv)
+    img_filepath = os.path.join(os.path.dirname(__file__), "probabilities_histogram", fileName_png)
     df.to_csv(csv_filepath)
     classifier.generate_bot_probabilities_histogram(img_filepath=img_filepath)
