@@ -165,7 +165,7 @@ class NetworkClassifier:
 # Load Retweet graphs
 for date in dateList:
     fileName = "graph_" + str(date) + ".gpickle"
-    local_graph_filePath = os.path.join('RT_graph', fileName)
+    local_graph_filePath = os.path.join('..', 'RT_graph', fileName)
     rt_graph = nx.read_gpickle(local_graph_filePath)
     classifier = NetworkClassifier(rt_graph)
     df = classifier.bot_probabilities_df
