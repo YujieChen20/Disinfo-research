@@ -3,7 +3,7 @@
 
 ## Installation
 
-### Repo Setup
+### Repo Setup:
 
 Make a copy of this template repo. Clone / download your copy of the repo.
 
