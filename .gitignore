@@ -2,6 +2,7 @@
 google-credentials.json
 *credentials*.json
 tweet-research-shared*.json
+*.json
 .idea
 probabilities/
 probabilities_histogram/
