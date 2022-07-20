@@ -14,8 +14,9 @@ google-cloud-bigquery # for interfacing with the BigQuery API
 
 # temporarily commenting-out some of these packages to get the heroku build size small enough
 pandas
-#networkx
-#numpy
+networkx
+numpy
+os
 #scipy
 #scikit-learn
 #nltk
@@ -24,7 +25,7 @@ pandas
 #basilica
 #transformers==4.8.2
 
-#matplotlib
+matplotlib
 #plotly
 #kaleido # required by plotly to save static images
 #squarify
