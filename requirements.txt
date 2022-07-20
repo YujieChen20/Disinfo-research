@@ -1,6 +1,4 @@
 pandas
 networkx
-datetime
-os
 numpy
 matplotlib
