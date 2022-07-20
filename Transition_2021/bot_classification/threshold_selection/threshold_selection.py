@@ -28,6 +28,8 @@ for date in dateList:
     temp = pd.read_csv(filePath).drop(['row_id'], axis=1)
     df = pd.concat([df, temp])
 
+#df.to_csv(os.path.join(os.path.dirname(__file__), "..", "probabilities", "probabilities.csv"))
+
 probabilities = df["bot_probability"]
 fig, ax = plt.subplots(1, 1, figsize=(12, 6))
 plt.hist(probabilities, edgecolor="black", bins=[i/100 for i in range(0, 101, 5)])
