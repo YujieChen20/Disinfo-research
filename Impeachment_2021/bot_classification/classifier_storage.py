@@ -21,7 +21,7 @@ def dateRange(date1, date2):
 
 
 dateList = []
-start_dt = date(2021, 3, 19)
+start_dt = date(2021, 1, 22)
 end_dt = date(2021, 3, 20)
 for dt in dateRange(start_dt, end_dt):
     dateList.append(dt.strftime("%Y-%m-%d"))
