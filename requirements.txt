@@ -2,3 +2,5 @@ pandas
 networkx
 numpy
 matplotlib
+python-dotenv # a.k.a. dotenv, for reading environment vars from the ".env" file
+google-cloud-storage # for interfacing with Google Cloud Storage
