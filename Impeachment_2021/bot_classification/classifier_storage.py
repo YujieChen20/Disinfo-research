@@ -11,6 +11,7 @@ from Impeachment_2021.bot_classification.classifier_helper import compute_bot_pr
 from Impeachment_2021.bot_classification.classifier_helper import fmt_pct
 from Impeachment_2021.bot_classification.classifier_helper import fmt_n
 from app.gcs_service import GoogleCloudStorageService
+from app import server_sleep
 
 
 # Generate Date (11/15/2020 - 05/15/2021)
@@ -20,8 +21,8 @@ def dateRange(date1, date2):
 
 
 dateList = []
-start_dt = date(2021, 1, 22)
-end_dt = date(2021, 1, 23)
+start_dt = date(2021, 3, 19)
+end_dt = date(2021, 3, 20)
 for dt in dateRange(start_dt, end_dt):
     dateList.append(dt.strftime("%Y-%m-%d"))
 
@@ -186,3 +187,5 @@ for date in dateList:
     remote_img_filepath = os.path.join('Impeachment_2021', 'bot_classification', "classification_hist", fileName_png)
     gcs_service.upload(csv_filepath, remote_csv_filepath)
     gcs_service.upload(img_filepath, remote_img_filepath)
+
+    server_sleep()
