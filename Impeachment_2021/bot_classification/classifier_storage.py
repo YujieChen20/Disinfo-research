@@ -169,9 +169,11 @@ gcs_service = GoogleCloudStorageService()
 for date in dateList:
     fileName = "graph_" + str(date) + ".gpickle"
     remote_graph_filePath = os.path.join('Impeachment_2021', 'RT_graph', fileName)
+    local_graph_filePath = os.path.join(os.path.dirname(__file__), "..", "download", fileName)
+    gcs_service.download(remote_graph_filePath, local_graph_filePath)
     #drive_path = '/content/drive/MyDrive/Disinfo Research Shared 2022/users/yc986/Impeachment_2021/'
     #drive_graph_filepath = os.path.join(drive_path, "RT_graph", fileName)
-    rt_graph = nx.read_gpickle(remote_graph_filePath)
+    rt_graph = nx.read_gpickle(local_graph_filePath)
     classifier = NetworkClassifier(rt_graph)
     df = classifier.bot_probabilities_df
     fileName_csv = "probabilities_" + str(date) + ".csv"
