@@ -1,1 +1,1 @@
-bot_classification_impeachment2021_job: python -m bot_classification.classifier_storage
+bot_classification_impeachment2021_job: python -m classifier_storage
