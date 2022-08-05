@@ -4,8 +4,6 @@ google-credentials.json
 tweet-research-shared*.json
 *.json
 .idea
-probabilities/
-probabilities_histogram/
 probabilities_histogram_log/
 RT_graph/
 *.csv
